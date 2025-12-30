@@ -1,10 +1,10 @@
-# Cell Image Analyzer
+# Cell Image Analyzer - Project Proposal
 
-A Python-based image processing tool for automated analysis of cell culture images from brightfield microscopy. This application detects cells, calculates confluency, estimates cell viability (live vs dead), and provides seeding volume calculations for cell culture workflows.
+A Python-based image processing tool for automated analysis of cell culture images from brightfield microscopy. This application will detect cells, calculate confluency, estimate cell viability (live vs dead), and provide seeding volume calculations for cell culture workflows.
 
 ## What Does This Project Do?
 
-This project automates the analysis of brightfield microscopy images of cell cultures. It performs the following tasks:
+This project will automate the analysis of brightfield microscopy images of cell cultures. It will perform the following tasks:
 
 1. **Cell Detection**: Automatically identifies and segments individual cells in brightfield images using advanced image processing algorithms (watershed segmentation or adaptive thresholding)
 
@@ -152,32 +152,7 @@ python -m gui.main_window
 python cli.py --image path/to/image.png --method watershed
 ```
 
-### Running Tests
-
-The project includes unit tests to verify functionality:
-
-```bash
-# Run all tests
-pytest
-
-# Run with verbose output
-pytest -v
-
-# Run specific test file
-pytest tests/test_image_processing.py
-
-# Run with coverage report
-pytest --cov=src --cov-report=html
-```
-
-Test files are located in the `tests/` directory and cover:
-- Image preprocessing functions
-- Cell detection algorithms
-- Confluency calculations
-- Viability classification
-- Edge cases and error handling
-
-### Project Structure
+### Project Possible Structure
 
 ```
 cell-image-analyzer/
@@ -199,42 +174,3 @@ cell-image-analyzer/
 └── examples/                # Example images and scripts
     └── sample_images/
 ```
-
-### Troubleshooting
-
-**Issue**: Import errors after installation
-- **Solution**: Make sure you activated the virtual environment and installed all requirements
-
-**Issue**: Images not loading
-- **Solution**: Check that the image format is supported and the file path is correct
-
-**Issue**: Poor cell detection results
-- **Solution**: Adjust parameters (min_distance, darkness_threshold, size_threshold) in the GUI to match your image characteristics
-
-**Issue**: GUI not appearing
-- **Solution**: Ensure PySide6 is installed correctly: `pip install --upgrade PySide6`
-
-### Development
-
-To contribute or modify the code:
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Make your changes
-4. Run tests: `pytest`
-5. Commit: `git commit -m "Description of changes"`
-6. Push: `git push origin feature-name`
-7. Create a Pull Request
-
-### License
-
-This project is open source. Check the LICENSE file for details.
-
-### Citation
-
-If you use this tool in your research, please cite appropriately.
-
----
-
-**Note**: This tool provides estimates based on image analysis. For critical applications, always verify results with manual counting or other validation methods.
-
