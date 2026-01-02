@@ -2,6 +2,19 @@
 
 A Python-based image processing tool for automated analysis of cell culture images from brightfield microscopy. This application will detect cells, calculate confluency, estimate cell viability (live vs dead), and provide seeding volume calculations for cell culture workflows.
 
+## Motivation
+
+Working in the tissue culture (TC) room involves repetitive and time-consuming tasks that can be prone to human error. Manual cell counting, confluency estimation, and viability assessment require significant time and can vary between researchers. This project aims to **make our lives easier in the TC room** by:
+
+- **Eliminating manual counting**: No more tedious counting under the microscope or using hemocytometers
+- **Reducing subjectivity**: Consistent, objective measurements of confluency and viability across different users
+- **Saving time**: Quick analysis of images in seconds instead of minutes and even hours of manual work
+- **Improving accuracy**: Automated detection reduces human error in cell counting and confluency estimation
+- **Streamlining workflows**: Integrated seeding calculator means no more manual calculations or guesswork when passaging cells
+- **Standardizing protocols**: Consistent analysis methods help maintain reproducibility across experiments
+
+Whether you're a student learning cell culture, a technician managing multiple cell lines, or a researcher optimizing culture conditions, this tool helps you work more efficiently and confidently in the TC room 😊
+
 ## What Does This Project Do?
 
 This project will automate the analysis of brightfield microscopy images of cell cultures. It will perform the following tasks:
@@ -197,4 +210,5 @@ cell-image-analyzer/
 └── examples/                # Example images and scripts
     └── sample_images/
 ```
+
 
