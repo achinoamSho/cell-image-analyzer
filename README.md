@@ -152,6 +152,29 @@ python -m gui.main_window
 python cli.py --image path/to/image.png --method watershed
 ```
 
+### Running Tests
+
+```bash
+# Run all tests
+pytest
+
+# Run with verbose output
+pytest -v
+
+# Run specific test file
+pytest tests/test_image_processing.py
+
+# Run with coverage report
+pytest --cov=src --cov-report=html
+```
+
+Test files are located in the `tests/` directory and cover:
+- Image preprocessing functions
+- Cell detection algorithms
+- Confluency calculations
+- Viability classification
+- Edge cases and error handling
+
 ### Project Possible Structure
 
 ```
@@ -174,3 +197,4 @@ cell-image-analyzer/
 └── examples/                # Example images and scripts
     └── sample_images/
 ```
+
